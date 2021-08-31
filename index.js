@@ -10,9 +10,10 @@ function getCountry(country){
        parentDiv.textContent='';
         const div=document.createElement('div')
         div.innerHTML=`
-       <h2 class="">Today Case:${ country.todayCases}</h2>
-       <h2 class="">Today Deaths:${ country.todayDeaths}</h2>
-       <h2 class="">Total Case:${ country.cases}</h2>
+       <h2 class="p-3 bg-primary border rounded">Today Case:${ country.todayCases}</h2>
+       <h2 class="p-3 bg-warning">Today Deaths:${ country.todayDeaths}</h2>
+       <h2 class="p-3 bg-danger">Total Case:${ country.cases}</h2>
+       <h2 class="p-3 bg-danger">Total Deaths:${ country.deaths}</h2>
        `
        parentDiv.appendChild(div) 
        console.log(country) 
